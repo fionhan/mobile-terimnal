@@ -1,20 +1,26 @@
-.menu-btn{
-    background-color: #1a1a1a;
-    font-weight:bold;
+.liner{
+    background:-webkit-linear-gradient(#57baa4,#9024dd);
+    background:-moz-linear-gradient(#57baa4,#9024dd);
+    background: -o-linear-gradient(#57baa4,#9024dd);
+
+    height: 100%;
+    width: 100%;
+}
+.menu-btn {
+    font-weight: bold;
     font-family: 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif';
-    text-align: center;
-    color:#003f54;
+    text-align: match-parent;
+    color: #fefeff;
+    border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    height: 7em;
 }
-.menu-btn .verify{
-    background: url(../img/menu-verify.jpg) no-repeat;
-}
-.menu-btn .enchase{
-    background: url(../img/menu-enchase.jpg) no-repeat;
-}
+
 .vignette {
-    background-image: -webkit-radial-gradient(50% 50%, ellipse, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 100%);
-    background-image: radial-gradient(50% 50%, ellipse, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 100%);
+    background-image: -webkit-radial-gradient(50% 50%, ellipse, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
+    background-image: radial-gradient(50% 50%, ellipse, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
 }
+
 .overlay {
     pointer-events: none;
     position: absolute;
@@ -23,24 +29,112 @@
     left: 0;
     top: 0;
 }
+
 .container {
     position: absolute;
     height: 100%;
     width: 100%;
 }
+
 .wrapper {
-    margin: -280px -180px;
+    padding: 6em 2em 0 2em;
+}
+
+#menu-container {
+    padding: 9em 0.625em 0 0.625em;
+}
+
+.menu-img1 {
+    -webkit-transition-property:opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    transition-duration:0.5s;
+
+    background-color:#008CBA;
+    width: 144px;
+    height: 110px;
+
+}
+.menu-img2 {
+    -webkit-transition-property:opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    transition-duration:0.5s;
+
+    background-color: #9024dd;
+    width: 144px;
+    height: 110px;
+}
+
+.menu-img1:hover{
+    opacity: 0.8;
+}
+.menu-img2:hover{
+    opacity: 0.8;
+}
+
+
+
+
+/* Styles for signup panels */
+.auth-plain {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 80px;
+}
+
+.left-solid {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.signup-panel {
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.signup-panel a{
+    color: #fff;
+}
+
+.signup-panel i {
+    font-size: 30px;
+    line-height: 50px;
+    color: #999;
+}
+.signup-panel form input, .signup-panel form span {
+    height: 50px;
+}
+.signup-panel .welcome {
+    font-size: 26px;
     text-align: center;
-    position: absolute;
-    height: 560px;
-    width: 360px;
-    left: 50%;
-    top: 50%;
+    margin-left: 0;
+}
+.signup-panel p {
+    font-size: 13px;
+    font-weight: 200;
+    text-align: center;
+    color:white;
+}
+.signup-panel .button {
+    margin-left: 35%;
 }
 
-.columns{
-    padding: 0 !important;
+.newusers {
+    background: #fff;
 }
-
-
-
+.login{
+    border:solid 1px #b3b3b3;
+}
