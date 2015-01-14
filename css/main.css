@@ -1,0 +1,26 @@
+.menu{
+    background-color: #1a1a1a;
+}
+.columns{
+    padding: 0 !important;
+}
+.menu-area-container{
+    padding: 6em 3em;
+}
+.menu-title{
+    font-weight:bold;
+    font-family: 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif';
+    text-align: center;
+    margin-top: -5em;
+
+}
+.menu-title .verify{
+    background: url(../img/menu-verify.jpg) no-repeat;
+}
+.menu-title .enchase{
+    background: url(../img/menu-enchase.jpg) no-repeat;
+}
+.menu-image{
+    width: 100%;
+    height: 100%;
+}
