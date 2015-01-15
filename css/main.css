@@ -1,11 +1,12 @@
-.liner{
-    background:-webkit-linear-gradient(#57baa4,#9024dd);
-    background:-moz-linear-gradient(#57baa4,#9024dd);
-    background: -o-linear-gradient(#57baa4,#9024dd);
+.liner {
+    background: -webkit-linear-gradient(#57baa4, #9024dd);
+    background: -moz-linear-gradient(#57baa4, #9024dd);
+    background: -o-linear-gradient(#57baa4, #9024dd);
 
     height: 100%;
     width: 100%;
 }
+
 .menu-btn {
     font-weight: bold;
     font-family: 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif';
@@ -44,48 +45,6 @@
     padding: 9em 0.625em 0 0.625em;
 }
 
-.menu-img1 {
-    -webkit-transition-property:opacity;
-    -moz-transition-property: opacity;
-    -o-transition-property: opacity;
-    transition-property: opacity;
-
-    -webkit-transition-duration:0.5s;
-    -moz-transition-duration:0.5s;
-    -o-transition-duration:0.5s;
-    transition-duration:0.5s;
-
-    background-color:#008CBA;
-    width: 144px;
-    height: 110px;
-
-}
-.menu-img2 {
-    -webkit-transition-property:opacity;
-    -moz-transition-property: opacity;
-    -o-transition-property: opacity;
-    transition-property: opacity;
-
-    -webkit-transition-duration:0.5s;
-    -moz-transition-duration:0.5s;
-    -o-transition-duration:0.5s;
-    transition-duration:0.5s;
-
-    background-color: #9024dd;
-    width: 144px;
-    height: 110px;
-}
-
-.menu-img1:hover{
-    opacity: 0.8;
-}
-.menu-img2:hover{
-    opacity: 0.8;
-}
-
-
-
-
 /* Styles for signup panels */
 .center.row {
     height: 300px;
@@ -116,7 +75,7 @@
 }
 
 .signup-panel .button {
-    margin:0 auto;
+    margin: 0 auto;
     display: block;
 }
 
@@ -128,6 +87,36 @@ p.title {
     border-bottom: 1px solid #cccccc !important;
 }
 
-.content{
+.content {
     height: 450px;
+}
+
+/*homepage style*/
+.masonry-brick {
+    width: 144px;
+    margin: 10px;
+    float: left;
+}
+
+#masonryContainer {
+    margin-top: 90px;
+    margin-left: 20px;
+}
+
+.menu-img {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+
+    background-color: #9024dd;
+}
+
+.menu-img:hover {
+    opacity: 0.8;
 }
