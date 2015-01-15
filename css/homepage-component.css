@@ -222,12 +222,12 @@
 	}
 }
 
-li:hover{
-	transition:border linear .2s,box-shadow linear .5s;
-	-moz-transition:border linear .2s,-moz-box-shadow linear .5s;
-	-webkit-transition:border linear .2s,-webkit-box-shadow linear .5s;
-	outline:none;border-color:rgba(255,0,0,0.5);
-	box-shadow:0 0 30px rgba(255,0,0,0.5);
-	-moz-box-shadow:0 0 30px rgba(255,0,0,0.5);
-	-webkit-box-shadow:0 0 30px rgba(255,0,0,0.5);
-}
+/*li:hover{*/
+	/*transition:border linear .2s,box-shadow linear .5s;*/
+	/*-moz-transition:border linear .2s,-moz-box-shadow linear .5s;*/
+	/*-webkit-transition:border linear .2s,-webkit-box-shadow linear .5s;*/
+	/*outline:none;border-color:rgba(255,0,0,0.5);*/
+	/*box-shadow:0 0 30px rgba(255,0,0,0.5);*/
+	/*-moz-box-shadow:0 0 30px rgba(255,0,0,0.5);*/
+	/*-webkit-box-shadow:0 0 30px rgba(255,0,0,0.5);*/
+/*}*/
