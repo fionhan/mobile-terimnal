@@ -9,7 +9,7 @@
 	display: block;
 	float: left;
 	padding: 7px;
-	width: 33%;
+	width: 50%;
 	opacity: 0;
 }
 
@@ -26,7 +26,38 @@
 	display: block;
 	max-width: 100%;
 }
+.grid li div {
+	outline: none;
+	border: none;
+	display: block;
+	max-width: 100%;
+}
+.grid h1{
+	color: #FFFFFF;
+	text-shadow: rgba(169, 158, 158, 0.38) 4px 3px 0,rgba(0, 0, 0, 0.01) 0px 6px 0px;
+}
+.menu-title-two-word{
+	display: block;
+	padding:5% 30% 25% 5%;
+}
 
+.menu-title-two-word i{
+	display: block;
+}
+.menu-title-two-word span{
+	padding-left: 45%;
+}
+.menu-title-four-word{
+	padding:5% 10% 20% 5%;
+}
+.menu-title-four-word i{
+	display: block;
+	padding-left: 0;
+}
+.menu-title-four-word span{
+	margin-left: 18%;
+	padding-top: 25%;
+}
 /* Effect 1: opacity */
 .grid.effect-1 li.animate {
 	-webkit-animation: fadeIn 0.65s ease forwards;
