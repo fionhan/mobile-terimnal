@@ -19,7 +19,8 @@
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    -moz-osx-font-smoothing: grayscale,
+    font-family: 'FontAwesome';
 }
 
 .fa-lg {
@@ -196,7 +197,8 @@
 }
 
 .fa-search:before {
-    content: "\f002"
+    content: "\f002",
+    font-family:
 }
 
 .fa-envelope-o:before {

@@ -124,7 +124,7 @@ p.title {
 /* Styles for search dropdown */
 .search {
     position: relative;
-    padding-top: 41px;
+    padding-top: 10px;
     margin-bottom: 0;
 }
 .search input {
@@ -132,9 +132,9 @@ p.title {
 }
 .search .keyword {
     position: absolute;
-    width: 100px;
-    margin-left: 10px;
-    margin-top: 17px;
+    width: 25%;
+    /*margin-left: 10px;*/
+    /*margin-top: 17px;*/
 }
 .search i {
     position: absolute;
@@ -172,4 +172,16 @@ p.title {
 }
 .task-table tr:hover{
     background-color: #a8f9d2;
+}
+
+.message-box{
+    height: 30px;
+    line-height: 30px;
+    margin:15px auto;
+    padding: 0;
+    width: 60%;
+    text-align: center;
+}
+.alert-wrapper{
+    height: 35px;
 }
