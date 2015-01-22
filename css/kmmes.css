@@ -1,0 +1,104 @@
+/*渐变样式--Begin--*/
+/*.liner {*/
+    /*background: -webkit-linear-gradient(#57baa4, #9024dd);*/
+    /*background: -moz-linear-gradient(#57baa4, #9024dd);*/
+    /*background: -o-linear-gradient(#57baa4, #9024dd);*/
+
+    /*height: 100%;*/
+    /*width: 100%;*/
+/*}*/
+/*渐变样式--End--*/
+/*FSS遮罩--Begin--*/
+/*.masonry-brick {*/
+    /*width: 144px;*/
+    /*margin: 10px;*/
+    /*float: left;*/
+/*}*/
+
+/*#masonryContainer {*/
+    /*margin-top: 90px;*/
+    /*margin-left: 20px;*/
+/*}*/
+/*.vignette {*/
+    /*background-image: -webkit-radial-gradient(50% 50%, ellipse, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);*/
+    /*background-image: radial-gradient(50% 50%, ellipse, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);*/
+/*}*/
+
+/*.overlay {*/
+    /*pointer-events: none;*/
+    /*position: absolute;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*left: 0;*/
+    /*top: 0;*/
+/*}*/
+/*FSS遮罩--End--*/
+/*.menu-img {*/
+    /*-webkit-transition-property: opacity;*/
+    /*-moz-transition-property: opacity;*/
+    /*-o-transition-property: opacity;*/
+    /*transition-property: opacity;*/
+
+    /*-webkit-transition-duration: 0.5s;*/
+    /*-moz-transition-duration: 0.5s;*/
+    /*-o-transition-duration: 0.5s;*/
+    /*transition-duration: 0.5s;*/
+
+    /*background-color: #9024dd;*/
+/*}*/
+
+/*.menu-img:hover {*/
+    /*opacity: 0.8;*/
+/*}*/
+
+/* Styles for signup panels */
+.center.row {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    max-width: 500px;
+}
+
+.signup-panel {
+    padding: 15px;
+}
+
+.signup-panel i {
+    font-size: 30px;
+    line-height: 50px;
+    color: #999;
+}
+
+.signup-panel form input, .signup-panel form span {
+    height: 50px;
+}
+
+.signup-panel .welcome {
+    font-size: 26px;
+    text-align: center;
+    margin-left: 0;
+}
+
+.signup-panel .button {
+    margin: 0 auto;
+    display: block;
+}
+/*plan-info*/
+.info{
+    padding: 5px 20px;
+    background-color: #ffffff;
+    border-top:solid 1px #DDDDDD;
+    border-bottom:solid 1px #DDDDDD;;
+}
+.alert-wrapper{
+    height: 35px;
+}
+
+.goBackIconButton{
+    color: #ffffff;
+    font-size:1.8em;
+}
+body{
+    background: #f2f2f2;
+}

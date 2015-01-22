@@ -1,0 +1,100 @@
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #6b7381;
+    background: #f2f2f2;
+}
+
+a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #333;
+}
+
+.container > header {
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.container > header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.container > header h1 {
+    font-size: 2.625em;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: 300;
+}
+
+.grid {
+    max-width: 69em;
+    list-style: none;
+    margin: 0px auto;
+    padding: 0;
+}
+
+.grid li {
+    display: block;
+    float: left;
+    padding: 7px;
+    width: 50%;
+    opacity: 0;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+    opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+    outline: none;
+    border: none;
+    display: block;
+    max-width: 100%;
+}
+.grid li div {
+    outline: none;
+    border: none;
+    display: block;
+    max-width: 100%;
+}
+.grid h1{
+    color: #FFFFFF;
+    text-shadow: rgba(169, 158, 158, 0.38) 4px 3px 0,rgba(0, 0, 0, 0.01) 0px 6px 0px;
+}
+.grid div{
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2em;font-weight: bold;
+}
+[class^="menu-"]{
+    padding-top: 0.3em;
+    border-radius: 0.2em;
+}
+.menu-sample-check{
+    background-color: #ea5d25;
+}
+.menu-equip-maintence{
+    background-color: #ba1136;
+}
+.menu-enchase{
+    background-color: #30384f;
+}
+.grid i{
+    font-size: 5em;
+    color: #ffffff;
+}
