@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>任务巡检</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/kmmes.css"/>
+    <link rel="stylesheet" href="css/font-kmmes.css"/>
+    <link rel="stylesheet" href="css/1.css"/>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.pagination.js"></script>
+    <script>
+        $(function () {
+            var initPagination = function () {
+                var num_entries = $("#hiddenresult div.result").length;
+                // 创建分页
+                $("#Pagination").pagination(num_entries, {
+                    num_edge_entries: 1, //边缘页数
+                    num_display_entries: 4, //主体页数
+                    callback: pageselectCallback,
+                    items_per_page: 1, //每页显示1项
+                    prev_text:"上一页",
+                    next_text:"下一页"
+                });
+            }();
+
+            function pageselectCallback(page_index, jq) {
+                var new_content = $("#hiddenresult div.result:eq(" + page_index + ")").clone();
+                $("#Searchresult").empty().append(new_content); //装载对应分页的内容
+                return false;
+            }
+//            function pageselectCallback(page_index, jq){
+//                // 从表单获取每页的显示的列表项数目
+//                var items_per_page = 2;
+//                var max_elem = Math.min((page_index+1) * items_per_page, length);
+//
+//                $("#Searchresult").html("");
+//                // 获取加载元素
+//                for(var i=page_index*items_per_page;i<max_elem;i++){
+//                    $("#Searchresult").append($("#hiddenresult .show:eq("+i+")").clone());
+//                }
+//                //阻止单击事件
+//                return false;
+//            }
+        });
+    </script>
+</head>
+<body>
+<div class="clearing-container">
+    <div class="fixed">
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
+                    <a href="###"><i class="icon-left-open goBackIconButton"></i></a>
+                </li>
+                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+            </ul>
+
+
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li>
+                        <a href="#">主页</a>
+                    </li>
+                    <li><a href="#" disabled>张三</a>
+                    </li>
+                    <li>
+                        <a href="#">退出</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    <div class="kmmes-panel panel-success">
+        <div class="panel-heading">
+            <h4 class="panel-title">汇报详情</h4>
+        </div>
+        <table class="table-history">
+            <thead>
+            <tr>
+                <th>汇报类型</th>
+                <th>汇报人</th>
+                <th>汇报属性</th>
+                <th>汇报数量</th>
+                <th>汇报时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>加工汇报</td>
+                <td>张三</td>
+                <td>合格数量</td>
+                <td>2</td>
+                <td>2014-12-20</td>
+            </tr>
+            <tr>
+                <td>加工汇报</td>
+                <td>李四</td>
+                <td>合格数量</td>
+                <td>2</td>
+                <td>2014-12-20</td>
+            </tr>
+            <tr>
+                <td>加工汇报</td>
+                <td>张三</td>
+                <td>合格数量</td>
+                <td>1</td>
+                <td>2014-12-20</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="kmmes-panel panel-success">
+        <div class="panel-heading">
+            <h4 class="panel-title">任务汇报</h4>
+        </div>
+    </div>
+
+    <div id="Pagination" class="pagination"><!-- 这里显示分页 --></div>
+    <div id="Searchresult">分页初始化完成后这里的内容会被替换。</div>
+    <div id="hiddenresult" style="display:none;">
+        <!-- 列表元素 -->
+        <div class="result">第1项内容</div>
+        <div class="result">第2项内容</div>
+        <div class="result">第3项内容</div>
+        <div class="result">第4项内容</div>
+        <div class="result">第5项内容</div>
+        <div class="result">第6项内容</div>
+        <div class="result">第7项内容</div>
+        <div class="result">第8项内容</div>
+    </div>
+
+</div>
+<script src="js/foundation.min.js"></script>
+<script src="js/foundation/foundation.topbar.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+</html>

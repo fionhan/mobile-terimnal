@@ -31,6 +31,18 @@
       "src": "fontawesome"
     },
     {
+      "uid": "004882ab2d5c418c5b2060e80596279b",
+      "css": "right-open-big",
+      "code": 59399,
+      "src": "entypo"
+    },
+    {
+      "uid": "6acd5cf005d48f96787350e72bd45688",
+      "css": "left",
+      "code": 59398,
+      "src": "entypo"
+    },
+    {
       "uid": "6ad86a953a5a76086c5568366863bbca",
       "css": "torso",
       "code": 59392,
@@ -41,6 +53,12 @@
       "css": "lock",
       "code": 59393,
       "src": "elusive"
+    },
+    {
+      "uid": "15739f3032c2aa3df67efc96b3ffef56",
+      "css": "cancel-circle",
+      "code": 59400,
+      "src": "websymbols"
     }
   ]
 }
