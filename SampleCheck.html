@@ -31,10 +31,10 @@
                 var items_per_page = 2;
                 var max_elem = Math.min((page_index+1) * items_per_page, num_entries);
 
-                $("#Searchresult").html("");
+                $("#pagenationContainer").html("");
                 for(var i=page_index*items_per_page;i<max_elem;i++){
                     var new_content = $("#hiddenresult div:eq(" + i + ")").clone();
-                    $("#Searchresult").append(new_content);
+                    $("#pagenationContainer").append(new_content);
                 }
                 //阻止单击事件
                 return false;
@@ -113,15 +113,39 @@
         <div class="panel-heading">
             <h4 class="panel-title">任务汇报</h4>
         </div>
-        <div id="Searchresult">分页初始化完成后这里的内容会被替换。</div>
+        <div class="row collapse task-row-header">
+            <div class="small-4 columns task-row">汇报项</div>
+            <div class="small-4 columns task-row">汇报值</div>
+            <div class="small-4 columns task-row">报警原因</div>
+        </div>
+        <div id="pagenationContainer">
+
+        </div>
+
     </div>
 
     <div id="Pagination" class="pagination"><!-- 这里显示分页 --></div>
 
     <div id="hiddenresult" style="display:none;">
         <!-- 列表元素 -->
-        <div>第1项内容</div>
-        <div>第2项内容</div>
+        <div class="row collapse task-row">
+            <span class="small-4 columns">合格数量</span>
+            <span class="small-4 columns">
+                <input class="input-small-4" type="text"/>
+            </span>
+            <span class="small-4 columns">
+                <input class="input-small-4" type="text"/>
+            </span>
+        </div>
+        <div class="row collapse task-row">
+            <span class="small-4 columns">报废数量</span>
+            <span class="small-4 columns">
+                <input class="input-small-4" type="text"/>
+            </span>
+            <span class="small-4 columns">
+                <input class="input-small-4" type="text"/>
+            </span>
+        </div>
         <div>第3项内容</div>
         <div>第4项内容</div>
         <div>第5项内容</div>

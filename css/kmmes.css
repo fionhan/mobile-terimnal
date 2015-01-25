@@ -96,13 +96,27 @@
     border-bottom: solid 1px #DDDDDD;;
     margin-bottom: 0.5em;
 }
-
+.task-row-header{
+    background-color: #F5F5F5;
+    border:none;
+    line-height: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.875em;
+}
 .task-row-report {
-    /*background-color: #f3ff65;*/
+
 }
 
 .task-row {
-    /*background-color: #008CBA;*/
+    text-align: center;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+.input-small-4{
+    padding: 0 !important;
+    margin: 0 !important;
+    vertical-align: middle;
 }
 
 .alert-wrapper {
