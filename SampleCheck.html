@@ -9,43 +9,36 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/kmmes.css"/>
     <link rel="stylesheet" href="css/font-kmmes.css"/>
-    <link rel="stylesheet" href="css/1.css"/>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.pagination.js"></script>
     <script>
         $(function () {
+            var num_entries = $("#hiddenresult div").length;
             var initPagination = function () {
-                var num_entries = $("#hiddenresult div.result").length;
                 // 创建分页
                 $("#Pagination").pagination(num_entries, {
                     num_edge_entries: 1, //边缘页数
                     num_display_entries: 4, //主体页数
                     callback: pageselectCallback,
-                    items_per_page: 1, //每页显示1项
+                    items_per_page: 2, //每页显示1项
                     prev_text:"上一页",
                     next_text:"下一页"
                 });
             }();
 
-            function pageselectCallback(page_index, jq) {
-                var new_content = $("#hiddenresult div.result:eq(" + page_index + ")").clone();
-                $("#Searchresult").empty().append(new_content); //装载对应分页的内容
+            function pageselectCallback(page_index, jq){
+                var items_per_page = 2;
+                var max_elem = Math.min((page_index+1) * items_per_page, num_entries);
+
+                $("#Searchresult").html("");
+                for(var i=page_index*items_per_page;i<max_elem;i++){
+                    var new_content = $("#hiddenresult div:eq(" + i + ")").clone();
+                    $("#Searchresult").append(new_content);
+                }
+                //阻止单击事件
                 return false;
             }
-//            function pageselectCallback(page_index, jq){
-//                // 从表单获取每页的显示的列表项数目
-//                var items_per_page = 2;
-//                var max_elem = Math.min((page_index+1) * items_per_page, length);
-//
-//                $("#Searchresult").html("");
-//                // 获取加载元素
-//                for(var i=page_index*items_per_page;i<max_elem;i++){
-//                    $("#Searchresult").append($("#hiddenresult .show:eq("+i+")").clone());
-//                }
-//                //阻止单击事件
-//                return false;
-//            }
         });
     </script>
 </head>
@@ -120,20 +113,21 @@
         <div class="panel-heading">
             <h4 class="panel-title">任务汇报</h4>
         </div>
+        <div id="Searchresult">分页初始化完成后这里的内容会被替换。</div>
     </div>
 
     <div id="Pagination" class="pagination"><!-- 这里显示分页 --></div>
-    <div id="Searchresult">分页初始化完成后这里的内容会被替换。</div>
+
     <div id="hiddenresult" style="display:none;">
         <!-- 列表元素 -->
-        <div class="result">第1项内容</div>
-        <div class="result">第2项内容</div>
-        <div class="result">第3项内容</div>
-        <div class="result">第4项内容</div>
-        <div class="result">第5项内容</div>
-        <div class="result">第6项内容</div>
-        <div class="result">第7项内容</div>
-        <div class="result">第8项内容</div>
+        <div>第1项内容</div>
+        <div>第2项内容</div>
+        <div>第3项内容</div>
+        <div>第4项内容</div>
+        <div>第5项内容</div>
+        <div>第6项内容</div>
+        <div>第7项内容</div>
+        <div>第8项内容</div>
     </div>
 
 </div>
