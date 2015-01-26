@@ -1,116 +1,127 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>任务巡检</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/kmmes.css"/>
-    <link rel="stylesheet" href="css/font-kmmes.css"/>
-    <script src="js/modernizr.custom.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>任务巡检</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/kmmes.css" />
+  <link rel="stylesheet" href="css/font-kmmes.css" />
+  <script src="js/modernizr.custom.js"></script>
 </head>
+
 <body>
-<div class="clearing-container">
+  <div class="clearing-container">
     <div class="fixed">
-        <nav class="top-bar" data-topbar role="navigation">
-            <ul class="title-area">
-                <li class="name">
-                    <a href="###"><i class="icon-left-open goBackIconButton"></i></a>
-                </li>
-                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-            </ul>
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <a href="###"><i class="icon-left-open goBackIconButton"></i></a>
+          </li>
+          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a>
+          </li>
+        </ul>
 
 
-            <section class="top-bar-section">
-                <!-- Right Nav Section -->
-                <ul class="right">
-                    <li>
-                        <a href="#">主页</a>
-                    </li>
-                    <li><a href="#" disabled>张三</a>
-                    </li>
-                    <li>
-                        <a href="#">退出</a>
-                    </li>
-                </ul>
-            </section>
-        </nav>
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li>
+              <a href="#">主页</a>
+            </li>
+            <li><a href="#" disabled>张三</a>
+            </li>
+            <li>
+              <a href="#">退出</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
     </div>
     <!--下拉搜索框-->
     <div class="row search">
-        <div class=" small-12 columns">
-            <div class="row collapse">
-                <!-- Search field -->
-                <div class="small-12 large-12  columns ">
-                    <div class=" keyword">
-                        <a href="#" data-dropdown="drop3">
-                            派工单号
+      <div class=" small-12 columns">
+        <div class="row collapse">
+          <!-- Search field -->
+          <div class="small-12 large-12  columns ">
+            <div class="keyword">
+              <a href="#" data-dropdown="drop3">
+                            <span>派工单号</span>
                             <div class="arrow-down"></div>
                         </a>
-                        <ul id="drop3" class="f-dropdown content" data-dropdown-content style="position: absolute;  left: -99999px;">
-                            <li><a href="#"> 派工单号</a></li>
-                            <li><a href="#"> 物料代号</a></li>
-                            <li><a href="#"> 工序代号</a></li>
-                        </ul>
-                    </div>
-                    <i class="fi-magnifying-glass"></i>
-                    <input type="text" class="search-field">
-                </div>
+              <ul id="drop3" class="f-dropdown content" data-dropdown-content style="position: absolute;  left: -99999px;">
+                <li><a href="#"> 派工单号</a>
+                </li>
+                <li><a href="#"> 物料代号</a>
+                </li>
+                <li><a href="#"> 工序代号</a>
+                </li>
+              </ul>
             </div>
+            <i class="fi-magnifying-glass"></i>
+            <input type="text" class="search-field">
+          </div>
         </div>
+      </div>
     </div>
     <!--下拉搜索框-->
 
     <div class="kmmes-panel panel-success">
-        <div class="panel-heading">
-            <h4 class="panel-title">订单详情</h4>
-        </div>
-        <div class="row collapse rows-panel">
-            <div class="small-6 columns">派工单号:MO-1501150004</div>
-            <div class="small-6 columns">物料: DIZUO/底座</div>
-            <div class="small-6 columns">工艺路线:车-铣-磨</div>
-            <div class="small-6 columns">计划数量:50</div>
-            <div class="small-6 columns">计划完成时间:2015-12-12</div>
-        </div>
+      <div class="panel-heading">
+        <h4 class="panel-title">订单详情</h4>
+      </div>
+      <div class="row collapse rows-panel">
+        <div class="small-6 columns">派工单号:MO-1501150004</div>
+        <div class="small-6 columns">物料: DIZUO/底座</div>
+        <div class="small-6 columns">工艺路线:车-铣-磨</div>
+        <div class="small-6 columns">计划数量:50</div>
+        <div class="small-6 columns">计划完成时间:2015-12-12</div>
+      </div>
     </div>
     <div class="kmmes-panel panel-success">
-        <div class="panel-heading">
-            <h4 class="panel-title">工序详情</h4>
+      <div class="panel-heading">
+        <h4 class="panel-title">工序详情</h4>
+      </div>
+      <div class="rows-panel">
+        <div class="row collapse">
+          <div class="small-6 columns">工序：20/铣</div>
+          <div class="small-6 columns">执行人：张三 李四 王五</div>
+          <div class="small-6 columns">完成数量/计划数量：20/20</div>
+          <div class="small-6 columns">合格数量/报废数量:18/2</div>
         </div>
-        <div class="rows-panel">
-            <div class="row collapse">
-                <div class="small-6 columns">工序：20/铣</div>
-                <div class="small-6 columns">执行人：张三 李四 王五</div>
-                <div class="small-6 columns">完成数量/计划数量：20/20</div>
-                <div class="small-6 columns">合格数量/报废数量:18/2</div>
-            </div>
+      </div>
+
+      <div class="rows-panel">
+        <div class="row collapse">
+          <div class="small-6 columns">工序：20/铣</div>
+          <div class="small-6 columns">执行人：张三 李四 王五</div>
+          <div class="small-6 columns">完成数量/计划数量：20/20</div>
+          <div class="small-6 columns">合格数量/报废数量:18/2</div>
         </div>
 
-        <div class="rows-panel">
-            <div class="row collapse">
-                <div class="small-6 columns">工序：20/铣</div>
-                <div class="small-6 columns">执行人：张三 李四 王五</div>
-                <div class="small-6 columns">完成数量/计划数量：20/20</div>
-                <div class="small-6 columns">合格数量/报废数量:18/2</div>
-            </div>
-
-        </div>
+      </div>
     </div>
 
     <a href="SampleCheck.html" id="btn_goToCheck" class="button">任务巡检</a>
-</div>
+  </div>
 
-<script src="js/jquery.js"></script>
-<script src="js/foundation.min.js"></script>
-<script src="js/foundation/foundation.topbar.js"></script>
-<script src="js/foundation/foundation.dropdown.js"></script>
-<script>
+  <script src="js/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  <script>
     $(document).foundation();
-</script>
+
+    $('.keyword ul li a').on('click', function() {
+      $('.keyword a:first span').text($(this).text());
+    });
+  </script>
 
 
 </body>
+
 </html>
