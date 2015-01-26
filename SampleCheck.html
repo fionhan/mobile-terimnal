@@ -22,33 +22,33 @@
                     num_display_entries: 4, //主体页数
                     callback: pageselectCallback,
                     items_per_page: 2, //每页显示1项
-                    prev_text:"上一页",
-                    next_text:"下一页"
+                    prev_text: "上一页",
+                    next_text: "下一页"
                 });
             }();
 
-            function pageselectCallback(page_index, jq){
+            function pageselectCallback(page_index, jq) {
 //                保存当前改变后的数据
-                var currentRows=$("#pagenationContainer").find("div");
-                if(currentRows!=undefined && currentRows.length>0){
-                    currentRows.each(function(){
-                        var currentSeq=$(this).attr("seq");
-                        var currentNumber=$(this).find("input[data-type='number']").val();
-                        var currentAlarm=$(this).find("input[data-type='alarm']").val();
+                var currentRows = $("#pagenationContainer").find("div");
+                if (currentRows != undefined && currentRows.length > 0) {
+                    currentRows.each(function () {
+                        var currentSeq = $(this).attr("seq");
+                        var currentNumber = $(this).find("input[data-type='number']").val();
+                        var currentAlarm = $(this).find("input[data-type='alarm']").val();
                         $("#hiddenresult")
-                                .find("div[seq='"+currentSeq+"']")
+                                .find("div[seq='" + currentSeq + "']")
                                 .find("input[data-type='number']").val(currentNumber);
                         $("#hiddenresult")
-                                .find("div[seq='"+currentSeq+"']")
+                                .find("div[seq='" + currentSeq + "']")
                                 .find("input[data-type='alarm']").val(currentAlarm);
 
                     });
                 }
                 var items_per_page = 2;
-                var max_elem = Math.min((page_index+1) * items_per_page, num_entries);
+                var max_elem = Math.min((page_index + 1) * items_per_page, num_entries);
 
                 $("#pagenationContainer").html("");
-                for(var i=page_index*items_per_page;i<max_elem;i++){
+                for (var i = page_index * items_per_page; i < max_elem; i++) {
                     var new_content = $("#hiddenresult div:eq(" + i + ")").clone();
                     $("#pagenationContainer").append(new_content);
                 }
@@ -130,9 +130,9 @@
             <h4 class="panel-title">任务汇报</h4>
         </div>
         <div class="row collapse task-row-header">
-            <div class="small-4 columns task-row">汇报项</div>
-            <div class="small-4 columns task-row">汇报值</div>
-            <div class="small-4 columns task-row">报警原因</div>
+            <div class="small-3 columns task-row">汇报项</div>
+            <div class="small-3 columns task-row">汇报值</div>
+            <div class="small-4 columns task-row" style="float: left;">报警原因</div>
         </div>
         <div id="pagenationContainer">
 
@@ -145,30 +145,60 @@
     <div id="hiddenresult" style="display:none;">
         <!-- 列表元素 -->
         <div class="row collapse task-row" seq="1">
-            <span class="small-4 columns">合格数量</span>
-            <span class="small-4 columns">
+            <span class="small-3 columns">合格数量</span>
+            <span class="small-3 columns">
                 <input class="input-small-4" type="text" data-type="number"/>
             </span>
             <span class="small-4 columns">
                 <input class="input-small-4" type="text" data-type="alarm"/>
+            </span>
+            <span class="small-1 columns">
+                <a href="#">
+                    <i class="icon-right-open-big"></i>
+                </a>
+            </span>
+            <span class="small-1 columns">
+                <a href="#">
+                    <i class="icon-cancel-circle"></i>
+                </a>
             </span>
         </div>
         <div class="row collapse task-row" seq="2">
-            <span class="small-4 columns">报废数量</span>
-            <span class="small-4 columns">
+            <span class="small-3 columns">报废数量</span>
+            <span class="small-3 columns">
                 <input class="input-small-4" type="text" data-type="number"/>
             </span>
             <span class="small-4 columns">
                 <input class="input-small-4" type="text" data-type="alarm"/>
+            </span>
+            <span class="small-1 columns">
+                <a href="#">
+                    <i class="icon-right-open-big"></i>
+                </a>
+            </span>
+            <span class="small-1 columns">
+                <a href="#">
+                    <i class="icon-cancel-circle"></i>
+                </a>
             </span>
         </div>
-        <div class="row collapse task-row" seq="3">
-            <span class="small-4 columns">待定数量</span>
-            <span class="small-4 columns">
+        <div class="row collapse task-row" seq="2">
+            <span class="small-3 columns">待定数量</span>
+            <span class="small-3 columns">
                 <input class="input-small-4" type="text" data-type="number"/>
             </span>
             <span class="small-4 columns">
                 <input class="input-small-4" type="text" data-type="alarm"/>
+            </span>
+            <span class="small-1 columns">
+                <a href="#">
+                    <i class="icon-right-open-big"></i>
+                </a>
+            </span>
+            <span class="small-1 columns">
+                <a href="#">
+                    <i class="icon-cancel-circle"></i>
+                </a>
             </span>
         </div>
     </div>
