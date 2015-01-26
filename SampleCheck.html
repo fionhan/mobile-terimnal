@@ -28,6 +28,22 @@
             }();
 
             function pageselectCallback(page_index, jq){
+//                保存当前改变后的数据
+                var currentRows=$("#pagenationContainer").find("div");
+                if(currentRows!=undefined && currentRows.length>0){
+                    currentRows.each(function(){
+                        var currentSeq=$(this).attr("seq");
+                        var currentNumber=$(this).find("input[data-type='number']").val();
+                        var currentAlarm=$(this).find("input[data-type='alarm']").val();
+                        $("#hiddenresult")
+                                .find("div[seq='"+currentSeq+"']")
+                                .find("input[data-type='number']").val(currentNumber);
+                        $("#hiddenresult")
+                                .find("div[seq='"+currentSeq+"']")
+                                .find("input[data-type='alarm']").val(currentAlarm);
+
+                    });
+                }
                 var items_per_page = 2;
                 var max_elem = Math.min((page_index+1) * items_per_page, num_entries);
 
@@ -128,30 +144,33 @@
 
     <div id="hiddenresult" style="display:none;">
         <!-- 列表元素 -->
-        <div class="row collapse task-row">
+        <div class="row collapse task-row" seq="1">
             <span class="small-4 columns">合格数量</span>
             <span class="small-4 columns">
-                <input class="input-small-4" type="text"/>
+                <input class="input-small-4" type="text" data-type="number"/>
             </span>
             <span class="small-4 columns">
-                <input class="input-small-4" type="text"/>
+                <input class="input-small-4" type="text" data-type="alarm"/>
             </span>
         </div>
-        <div class="row collapse task-row">
+        <div class="row collapse task-row" seq="2">
             <span class="small-4 columns">报废数量</span>
             <span class="small-4 columns">
-                <input class="input-small-4" type="text"/>
+                <input class="input-small-4" type="text" data-type="number"/>
             </span>
             <span class="small-4 columns">
-                <input class="input-small-4" type="text"/>
+                <input class="input-small-4" type="text" data-type="alarm"/>
             </span>
         </div>
-        <div>第3项内容</div>
-        <div>第4项内容</div>
-        <div>第5项内容</div>
-        <div>第6项内容</div>
-        <div>第7项内容</div>
-        <div>第8项内容</div>
+        <div class="row collapse task-row" seq="3">
+            <span class="small-4 columns">待定数量</span>
+            <span class="small-4 columns">
+                <input class="input-small-4" type="text" data-type="number"/>
+            </span>
+            <span class="small-4 columns">
+                <input class="input-small-4" type="text" data-type="alarm"/>
+            </span>
+        </div>
     </div>
 
 </div>
